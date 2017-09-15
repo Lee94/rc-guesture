@@ -12,6 +12,10 @@
     "react-native",
     "guesture"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Lee94/rc-hammer.git"
+  },
   "author": "fay",
   "license": "MIT"
 }
