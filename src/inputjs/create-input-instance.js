@@ -7,7 +7,7 @@ import PanTouchInput from '../input/pantouch';
  * @private
  * create new input type manager
  * called by the Manager constructor
- * @param {Hammer} manager
+ * @param {Guesture} manager
  * @returns {Input}
  */
 export default function createInputInstance(manager) {

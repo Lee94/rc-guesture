@@ -29,7 +29,7 @@ export default function inputHandler(manager, eventType, input) {
   computeInputData(manager, input);
 
   // emit secret event
-  //manager.emit('hammer.input', input);
+  //manager.emit('guesture.input', input);
   manager.recognize(input);
   manager.session.prevInput = input;
 }
