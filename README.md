@@ -1,2 +1,2 @@
 # rc-guesture
-guesture in React/RN
+use hammerjs in React/RN

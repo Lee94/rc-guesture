@@ -28,20 +28,13 @@ import {
 
 import Manager from './manager';
 import Input from './inputjs/input-constructor';
-import TouchAction from './touchactionjs/touchaction-constructor';
 import TouchInput from './input/touch';
-import MouseInput from './input/mouse';
-import PointerEventInput from './input/pointerevent';
-import SingleTouchInput from './input/singletouch';
-import TouchMouseInput from './input/touchmouse';
+import PanTouchInput from './input/pantouch';
 
 import Recognizer from  './recognizerjs/recognizer-constructor';
 import AttrRecognizer from './recognizers/attribute';
 import TapRecognizer from './recognizers/tap';
 import PanRecognizer from './recognizers/pan';
-import SwipeRecognizer from './recognizers/swipe';
-import PinchRecognizer from './recognizers/pinch';
-import RotateRecognizer from './recognizers/rotate';
 import PressRecognizer from './recognizers/press';
 
 import addEventListeners from './utils/add-event-listeners';
@@ -59,7 +52,7 @@ import inArray from'./utils/in-array';
 import boolOrFn from'./utils/bool-or-fn';
 import hasParent from'./utils/has-parent';
 
-assign(Gammer, {
+assign(Guesture, {
   INPUT_START,
   INPUT_MOVE,
   INPUT_END,
@@ -84,21 +77,14 @@ assign(Gammer, {
 
   Manager,
   Input,
-  TouchAction,
 
   TouchInput,
-  MouseInput,
-  PointerEventInput,
-  TouchMouseInput,
-  SingleTouchInput,
+  PanTouchInput,
 
   Recognizer,
   AttrRecognizer,
   Tap: TapRecognizer,
   Pan: PanRecognizer,
-  Swipe: SwipeRecognizer,
-  Pinch: PinchRecognizer,
-  Rotate: RotateRecognizer,
   Press: PressRecognizer,
 
   on: addEventListeners,

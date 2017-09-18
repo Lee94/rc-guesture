@@ -1,8 +1,8 @@
 import Manager from "./manager";
 //recognizer
-import TapRecognizer from './recognizer/tap';
-import PressRecognizer from './recognizer/press';
-import PanRecognizer from './recognizer/pan';
+import TapRecognizer from './recognizers/tap';
+import PressRecognizer from './recognizers/press';
+import PanRecognizer from './recognizers/pan';
 //utils
 import splitStr from './utils/split-str';
 import each from './utils/each';

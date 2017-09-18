@@ -1,22 +1,30 @@
 {
-  "name": "rc-guesture",
-  "version": "0.1.8",
-  "description": "guesture in React/ReactNative",
+  "name": "rc-hammer",
+  "version": "0.1.14",
+  "description": "use hammerjs in React/ReactNative",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf ./dist",
+    "build": "babel ./src --copy-files --source-maps --extensions .es6,.es,.jsx,.js --out-dir ./dist",
+    "prepublish": "npm run clean && npm run build"
   },
   "keywords": [
+    "hammerjs",
     "react",
     "react-native",
     "guesture"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/Lee94/rc-guesture.git"
+    "url": "git://github.com/Lee94/rc-hammer.git"
   },
   "author": "fay",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
   }
 }
