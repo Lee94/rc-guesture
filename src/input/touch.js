@@ -48,9 +48,6 @@ export default class TouchInput extends Input {
       pointerType: INPUT_TYPE_TOUCH,
       srcEvent: ev
     });
-
-    //之后通过配置
-    ev.stopPropagation();
   }
 }
 

@@ -58,7 +58,7 @@ export default class PanTouchInput extends Input {
         return convertTouch(touch);
       }),
       pointerType: INPUT_TYPE_PAN,
-      srcEvent: ev.nativeEvent
+      srcEvent: ev
     });
 
     function convertTouch(touch) {
